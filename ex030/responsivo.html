@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+
+    <style>
+        body{
+            background-color: gray;
+        }
+
+        main{
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+           /* width: 800px;O conteudo main tera apenas 800px de comprimento*/
+           min-width: 320px; /*Tela minima para celulares*/
+           max-width: 800px;
+             margin: auto;/*centraliza o conteudo main*/
+        }
+        img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de Responsividade</h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolorum exercitationem excepturi voluptas amet tenetur iste accusantium corrupti. Iusto cupiditate cumque expedita officia explicabo omnis obcaecati natus tempore cum doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique rem a cumque, reiciendis quo voluptas neque pariatur voluptate. Ipsam hic rem vel ratione ipsa eos magnam nostrum reprehenderit minus illum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo, impedit architecto. Deserunt iusto accusantium esse, excepturi tempore at delectus ipsum facere dolorum atque adipisci? Nulla recusandae adipisci tempore in dolorum.</p>
+
+        <picture>
+            <source media="(max-width: 600px)" srcset="irina-blok-pq.png">
+            <img src="imagens/irina-blok.jpg" alt="irina-blok">
+        </picture>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea eos sapiente dignissimos laborum ratione numquam animi nihil tempora obcaecati, soluta esse excepturi maiores molestias eum. Aspernatur, dolorum. Aliquam, amet iusto? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati odit deserunt omnis sapiente illo cum dignissimos numquam dolores? Nisi aliquam quibusdam sunt a ex possimus obcaecati blanditiis laborum neque minus!</p>
+
+        <picture>
+            <source media="(min-width:800px)" srcset="irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="Irina blok, criadora do bugdroid">
+        </picture>
+
+        <picture>
+            <source media="(max-width: 800px)" srcset="dan-droids-pq.png">
+            <img src="imagens/dan-droids.png" alt="dan-droids">
+        </picture>
+    </main>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+
+        /*
+            # = id
+            . =class
+            : = pseudo-class
+            :: = pseudo-elemento
+            >  = children
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color:red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{ /* A pseudo-classe visited, é para ver se ja foi ou nao visistado*/
+            color: darkblue;
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active{ /* Active para quando o mouse apertar(deve apertar, nao passar o mouse) no link ficar da cor abaixo*/
+            color: aqua;
+        }
+
+        .especial::before { /*Os :: indicam um pseudo-elemento. o after significa depois de ... tem o before */
+            /*podemos usar a class e o pseudo-elementos como fizemos acima*/
+            content: '[link]'; /*conteudo*/
+            text-decoration: none;
+            font-weight: normal;
+            color: grey;
+
+        }
+    
+    </style>
+
+</head>
+<body>
+    <h1>personalizando links</h1>
+     <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositorio do Github</a></li>
+     <li><a href="htpps://youtube.com/cursoemvideo" target="_blank">canal do Youtube</a></li>
+     <li><a href="htpps://www.cursoemvideo.com "class="especial" target="_blank">Site do curso em video</a></li>
+</body>
+</html>

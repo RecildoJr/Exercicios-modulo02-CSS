@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Models</title>
+    <style>
+        h1{ /*Box-level*/
+            /*Caso eu queira transformar esse box-level numa inline level é so colocar, display:inline;
+            O width e o height nao podem estar no inline-box*/
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            /*O shortcut seria, border:width(10px), style(solid), color(darkslategray); tudo nessa ordem, sme*/
+            border-width: 10px;         
+            border-style: solid;
+            border-color: darkslategray;
+            
+            /* O shortcut seria, padding:top(10px), right(10px), bottom(10px), left(10px); tudo nessa ordem*/
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;/*como todos px sao de 10, podemos colocar 1vez*/
+            
+            /*O shortcut seria, margin:top(20px), right(20px), bottom(40px), left(20px)*/
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+            
+            /*O shortcut seria, outline: width(5px), style(dashed), color(salmon)*/
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+
+            margin: auto; /*Caso queira colocar qualquer caixa no centro, usaremos a margin auto*/
+        }
+
+        a{ /*inline-level*/
+            /*Caso eu queira transformar esse inline-level numa box-level é so colocar, display:block*/
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Caixa Box-Levels</h1>
+    <p>Paragrafos tambem sao exemplos de box-levels,mas os <a href="#">links sao exemplos de Caixas-inline levels</a>. vamos ver como tudo isso funciona.</p>
+</body>
+</html>

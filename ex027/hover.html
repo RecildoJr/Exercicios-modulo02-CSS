@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo de hover</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        div > p { /*quando colocamos o >, dizemos que o p esta dentro da div. ou seja, ele vai mexer no paragrafo que esta dentro da div apenas*/
+            display: none; /* o display é uma tag,o none é para dizer nao mostre nada*/
+        }
+
+        div:hover > p{ /* diz que quando eu passar o mouse em cima da div, o p...*/
+            display: block; /* display:block; da o comando de que o p vai mostrar. o block é para mostrar e o none é nao mostrar*/
+            color: white;
+            background-color: aqua;
+            width: 100px;
+
+        }
+
+        div:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+
+    <p>Passe o Mouse no texto abaixo</p>
+
+    <div>
+        Passe o Mouse aqui
+        <p>Texto ESCONDIDO </p>
+    </div>
+
+    <p>end..</p>
+</body>
+</html>
